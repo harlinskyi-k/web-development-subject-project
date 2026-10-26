@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Twingate: It's time to ditch your VPN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base/reset.css" />
+    <link rel="stylesheet" href="assets/css/base/typography.css" />
+    <link rel="stylesheet" href="assets/css/base/layout.css" />
+    <link rel="stylesheet" href="assets/css/components/buttons.css" />
+    <link rel="stylesheet" href="assets/css/sections/header.css" />
+    <link rel="stylesheet" href="assets/css/sections/hero.css" />
+    <link rel="stylesheet" href="assets/css/components/mockup.css" />
+    <link rel="stylesheet" href="assets/css/sections/logos.css" />
+    <link rel="stylesheet" href="assets/css/sections/ztna.css" />
+    <link rel="stylesheet" href="assets/css/sections/features.css" />
+    <link rel="stylesheet" href="assets/css/components/band.css" />
+    <link rel="stylesheet" href="assets/css/sections/integrations.css" />
+    <link rel="stylesheet" href="assets/css/sections/access.css" />
+    <link rel="stylesheet" href="assets/css/sections/deploy.css" />
+    <link rel="stylesheet" href="assets/css/sections/as-code.css" />
+    <link rel="stylesheet" href="assets/css/sections/scale.css" />
+    <link rel="stylesheet" href="assets/css/sections/customers.css" />
+    <link rel="stylesheet" href="assets/css/sections/footer.css" />
+  </head>
+  <body>
+    <!-- ============ NAV ============ -->
+    <header class="header">
+      <div class="wrap">
+        <div class="header__bar">
+          <a href="#" class="header__logo"
+            ><img
+              src="assets/svg/logo.svg"
+              alt="Twingate"
+              width="86"
+              height="20"
+          /></a>
+          <input
+            type="checkbox"
+            id="nav-toggle"
+            class="nav-toggle visually-hidden"
+            aria-label="Menu"
+          />
+          <nav class="nav t-sm">
+            <a href="#">Product</a>
+            <a href="#">Docs</a>
+            <a href="#">Partners</a>
+            <a href="#">Resources</a>
+            <a href="#">Customers</a>
+            <a href="#">Pricing</a>
+            <a href="#" class="nav__demo">Request Demo</a>
+            <a href="#" class="nav__signin">Sign in</a>
+          </nav>
+          <div class="header__actions">
+            <a href="#" class="header__demo t-sm">Request Demo</a>
+            <a href="#" class="header__try t-sm">Try for Free</a>
+            <a href="#" class="btn-pill header__signin">Sign in</a>
+            <label for="nav-toggle" class="header__burger" aria-hidden="true">
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                <path
+                  d="M0 1h16M0 6h16M0 11h16"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+              </svg>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="wrap hero__top">
+          <div class="hero__glow"></div>
+          <div class="hero__vignette"></div>
+          <img src="assets/img/hero-beam-image.png" alt="" class="hero__beam" />
+          <div class="hero__beam-glow"></div>
+          <div class="hero__beam-line"></div>
+
+          <div class="hero__content">
+            <a href="#" class="hero__eyebrow t-sm c-lime"
+              >Introducing Twingate for MSPs →</a
+            >
+            <h1 class="hero__title t-h1 heading">
+              It's time to <br />ditch your VPN
+            </h1>
+            <p class="hero__lead t-lg">
+              Twingate makes Zero Trust Network Access easy to <br />deploy,
+              even easier to use, and always secure.
+            </p>
+            <div class="actions">
+              <a href="#" class="btn-lime"
+                >Try Twingate for Free<img
+                  src="assets/svg/chevron-dark.svg"
+                  alt=""
+                  class="chev"
+              /></a>
+              <a href="#" class="link-chev"
+                >Request a Demo<img
+                  src="assets/svg/chevron-light.svg"
+                  alt=""
+                  class="chev"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- macOS mockup -->
+        <div class="mock" aria-hidden="true">
+          <div class="mock__frame">
+            <div class="mock__screen">
+              <div class="menubar">
+                <img
+                  src="assets/svg/mac-apple.svg"
+                  alt=""
+                  class="menubar__apple"
+                />
+                <div class="menubar__menu">
+                  <span>Finder</span>
+                  <span>Edit</span>
+                  <span>View</span>
+                  <span>Go</span>
+                  <span>Window</span>
+                  <span>Help</span>
+                </div>
+
+                <div class="menubar__status">
+                  <div class="tray">
+                    <div class="tray__glow">
+                      <div class="tray__glow-fill"></div>
+                      <div class="tray__glow-line"></div>
+                    </div>
+                    <div class="tray__icon">
+                      <img src="assets/svg/mac-twingate.svg" alt="" />
+                    </div>
+
+                    <div class="dropdown">
+                      <div class="dropdown__search">
+                        <img src="assets/svg/mac-search.svg" alt="" />
+                        <span>Search</span>
+                      </div>
+                      <p class="dropdown__label t-micro">FAVORITES</p>
+                      <ul class="dropdown__list">
+                        <li>
+                          <span class="dropdown__tile"
+                            ><img src="assets/svg/mac-kube.svg" alt=""
+                          /></span>
+                          <span class="dropdown__status"
+                            >STG Cluster<small class="t-micro"
+                              >Connected</small
+                            ></span
+                          >
+                        </li>
+                        <li>
+                          <span class="dropdown__tile"
+                            ><img src="assets/svg/mac-kube.svg" alt=""
+                          /></span>
+                          Prod Cluster
+                        </li>
+                        <li>
+                          <span class="dropdown__tile"
+                            ><img src="assets/svg/mac-elastic.svg" alt=""
+                          /></span>
+                          Elastic
+                        </li>
+                        <li>
+                          <span class="dropdown__tile"
+                            ><img src="assets/svg/mac-gitlab.svg" alt=""
+                          /></span>
+                          Gitlab
+                        </li>
+                        <li>
+                          <span class="dropdown__tile"
+                            ><img src="assets/svg/mac-jira.svg" alt=""
+                          /></span>
+                          Jira
+                        </li>
+                      </ul>
+                      <div class="dropdown__links">
+                        <p>Other Resources</p>
+                        <p>Sign Out</p>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="assets/svg/mac-wifi.svg"
+                    alt=""
+                    class="menubar__wifi"
+                  />
+                  <img
+                    src="assets/svg/mac-battery.svg"
+                    alt=""
+                    class="menubar__battery"
+                  />
+                  <img
+                    src="assets/svg/mac-control.svg"
+                    alt=""
+                    class="menubar__control"
+                  />
+                  <span class="menubar__clock">Fri 2:55 PM</span>
+                </div>
+              </div>
+
+              <div class="desktop">
+                <div class="terminal">
+                  <div class="terminal__bar">
+                    <div class="terminal__dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="terminal__title t-xs"
+                      >alex – alex@alex-mbp</span
+                    >
+                  </div>
+                  <div class="terminal__body keep-br t-xs">
+                    <p class="terminal__prompt">
+                      <span>alex@alex-mbp ~ %</span
+                      ><span>ssh root@k8s.prod.autoco.int</span>
+                    </p>
+                    <p>
+                      &gt; ssh root@k8s.prod.autoco.int<br />ssh: connection
+                      refused
+                    </p>
+                    <p class="terminal__prompt">
+                      <span>alex@alex-mbp ~ %</span
+                      ><span>ssh root@k8s.prod.autoco.int</span>
+                    </p>
+                    <p>
+                      Welcome to Kubernetes v1.21.1!<br /><br />Type 'help' for
+                      a list of commands.<br /><br />root@prod-cluster:~$
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LOGOS ============ -->
+      <section class="wrap logos">
+        <p class="logos__title t-sm c-muted">
+          Trusted by fast-growing companies worldwide
+        </p>
+        <div class="logos__grid">
+          <div>
+            <img src="assets/svg/logo-blend.svg" alt="Blend" width="65" />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-bloomreach.svg"
+              alt="Bloomreach"
+              width="130"
+            />
+          </div>
+          <div>
+            <img src="assets/svg/logo-cameo.svg" alt="Cameo" width="78" />
+          </div>
+          <div>
+            <img src="assets/svg/logo-hippo.svg" alt="Hippo" width="70" />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-bitpanda.svg"
+              alt="Bitpanda"
+              width="102"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-chargebee.svg"
+              alt="Chargebee"
+              width="97"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-hirez.svg"
+              alt="Hi-Rez Studios"
+              width="86"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-homebase.svg"
+              alt="Homebase"
+              width="110"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-cerebral.svg"
+              alt="Cerebral"
+              width="112"
+            />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-liberis-text.svg"
+              alt="Liberis"
+              width="58"
+            />
+            <img src="assets/svg/logo-liberis-mark.svg" alt="" width="22" />
+          </div>
+          <div>
+            <img src="assets/svg/logo-webflow.svg" alt="Webflow" width="88" />
+          </div>
+          <div>
+            <img
+              src="assets/svg/logo-modernhealth.svg"
+              alt="Modern Health"
+              width="103"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ZERO TRUST NETWORK ACCESS ============ -->
+      <section class="wrap ztna">
+        <div class="diagram" aria-hidden="true">
+          <div class="diagram__glow"></div>
+          <div class="diagram__haze"></div>
+          <div class="diagram__link diagram__link--in"></div>
+          <div class="diagram__link diagram__link--out"></div>
+          <div class="diagram__rail"></div>
+
+          <div class="diagram__device diagram__device--laptop">
+            <div class="laptop"></div>
+            <div class="laptop__base"></div>
+            <dl class="specs t-caption">
+              <div>
+                <dt>Device</dt>
+                <dd>Alex's MacBook Pro</dd>
+              </div>
+              <div>
+                <dt>OS Version</dt>
+                <dd>macOS 13.2.1</dd>
+              </div>
+              <div>
+                <dt>EDR</dt>
+                <dd>CrowdStrike</dd>
+              </div>
+              <div>
+                <dt>Hard Drive</dt>
+                <dd>Encrypted</dd>
+              </div>
+              <div>
+                <dt>User</dt>
+                <dd>Alex Marshall</dd>
+              </div>
+              <div>
+                <dt>Okta Groups</dt>
+                <dd>Engineer, DevOps</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="diagram__check">
+            <div class="check">
+              <img src="assets/svg/ztna-check.svg" alt="" />
+              <img src="assets/svg/ztna-ring.svg" alt="" class="check__ring" />
+            </div>
+          </div>
+
+          <div class="diagram__device">
+            <div class="server">
+              <div class="server__rack">
+                <div class="server__unit">
+                  <span class="server__leds"
+                    ><i class="led led--off"></i><i class="led led--off"></i
+                    ><i class="led"></i
+                  ></span>
+                  <svg width="44" height="10"><use href="#rack-vents" /></svg>
+                </div>
+                <div class="server__unit">
+                  <span class="server__leds"
+                    ><i class="led led--off"></i><i class="led"></i
+                    ><i class="led"></i
+                  ></span>
+                  <svg width="44" height="10"><use href="#rack-vents" /></svg>
+                </div>
+                <div class="server__unit">
+                  <span class="server__leds"
+                    ><i class="led"></i><i class="led led--off"></i
+                    ><i class="led"></i
+                  ></span>
+                  <svg width="44" height="10"><use href="#rack-vents" /></svg>
+                </div>
+              </div>
+            </div>
+            <dl class="specs specs--resource t-caption">
+              <div>
+                <dt>Resource</dt>
+                <dd>Prod Cluster</dd>
+              </div>
+              <div>
+                <dt>Address</dt>
+                <dd>k8s.prod.autoco.int</dd>
+              </div>
+              <div>
+                <dt>Ports</dt>
+                <dd>80, 81</dd>
+              </div>
+              <div>
+                <dt>VPC</dt>
+                <dd>AWS Data Eng</dd>
+              </div>
+              <div>
+                <dt>Access Policy</dt>
+                <dd>Prod Access</dd>
+              </div>
+              <div>
+                <dt>Auth Policy</dt>
+                <dd>MFA every 2 hours</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <div class="ztna__copy">
+          <h3 class="t-base c-lime">Zero Trust Network Access</h3>
+          <h2 class="t-h2 heading">
+            Powerful access controls,&nbsp;<br />lightning fast speed
+          </h2>
+          <p class="t-base c-soft nowrap-xl">
+            Twingate establishes direct peer-to-peer connections <br />to
+            protected resources, with each request verified <br />before it ever
+            leaves the device.
+          </p>
+          <a href="#" class="btn-pill"
+            >How Twingate Works<img
+              src="assets/svg/chevron-light.svg"
+              alt=""
+              class="chev"
+          /></a>
+        </div>
+      </section>
+
+      <!-- ============ FEATURE CARDS ============ -->
+      <section class="wrap features">
+        <article class="card">
+          <div class="card__visual" aria-hidden="true">
+            <div class="alert keep-br t-xs c-soft">
+              <div class="alert__icon">
+                <img src="assets/svg/card-kube.svg" alt="" />
+                <span class="lock"
+                  ><img src="assets/svg/lock.svg" alt=""
+                /></span>
+              </div>
+              <p class="alert__name">Prod Cluster</p>
+              <p>k8s.prod.autoco.int</p>
+              <p class="alert__text">
+                This device is not authorized to <br />access Prod Cluster.
+              </p>
+              <a href="#" class="alert__more">Learn more</a>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="t-base">Limit Exposure &amp; Entry Points</h3>
+            <p class="t-base c-muted nowrap-xl">
+              Prevent lateral traffic and limit your attack surface with direct
+              <br />peer-to-peer connections that sit behind your firewall.
+            </p>
+            <a href="#" class="btn-pill"
+              >Peer-to-Peer Communication<img
+                src="assets/svg/chevron-light.svg"
+                alt=""
+                class="chev"
+            /></a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__visual card__visual--list" aria-hidden="true">
+            <ul class="activity t-xs c-soft">
+              <li>
+                <span class="activity__bead"
+                  ><img src="assets/svg/check.svg" alt=""
+                /></span>
+                <span class="activity__line">
+                  <span>Alex's MacBook Pro</span>
+                  <span class="activity__verb t-sm">connected to</span>
+                  <img src="assets/svg/app-salesforce.svg" alt="" />
+                  <span>Salesforce</span>
+                </span>
+              </li>
+              <li>
+                <span class="activity__bead"
+                  ><img src="assets/svg/check.svg" alt=""
+                /></span>
+                <span class="activity__line">
+                  <span>Alex's MacBook Pro</span>
+                  <span class="activity__verb t-sm">connected to</span>
+                  <img src="assets/svg/app-jira.svg" alt="" />
+                  <span>Jira</span>
+                </span>
+              </li>
+              <li class="activity__blocked">
+                <span class="lock"
+                  ><img src="assets/svg/lock.svg" alt=""
+                /></span>
+                <span class="activity__line">
+                  <span>Alex's MacBook Pro</span>
+                  <span class="activity__verb">blocked from</span>
+                  <img src="assets/svg/app-kube.svg" alt="" />
+                  <span>Prod Cluster</span>
+                </span>
+              </li>
+              <li>
+                <span class="activity__bead"
+                  ><img src="assets/svg/check.svg" alt=""
+                /></span>
+                <span class="activity__line">
+                  <span>Alex's MacBook Pro</span>
+                  <span class="activity__verb t-sm">connected to</span>
+                  <img src="assets/svg/app-gitlab.svg" alt="" />
+                  <span>Gitlab</span>
+                </span>
+              </li>
+              <li>
+                <span class="activity__bead"
+                  ><img src="assets/svg/check.svg" alt=""
+                /></span>
+                <span class="activity__line">
+                  <span>Alex's MacBook Pro</span>
+                  <span class="activity__verb t-sm">connected to</span>
+                  <img src="assets/svg/app-elastic.svg" alt="" />
+                  <span>Elastic</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="card__body">
+            <h3 class="t-base">Monitor your Network Activity</h3>
+            <p class="t-base c-muted nowrap-xl">
+              Monitor and adapt granular access policies with logging &amp;
+              <br />analytics that provide visibility across your network.
+            </p>
+            <a href="#" class="btn-pill"
+              >Network Analytics<img
+                src="assets/svg/chevron-light.svg"
+                alt=""
+                class="chev"
+            /></a>
+          </div>
+        </article>
+      </section>
+
+      <!-- ============ INTEGRATIONS ============ -->
+      <section class="band">
+        <div class="wrap integrations">
+          <div class="integrations__copy">
+            <h2 class="t-h2 heading">
+              Build a best-in-class <br />security ecosystem
+            </h2>
+            <p class="t-base c-muted nowrap-xl">
+              Twingate is a central Zero Trust orchestration layer, so you can
+              <br />create a best-in-class security ecosystem without having to
+              recut <br />your network. Leverage out-of-the-box integrations
+              with major <br />IdPs, MDM/EDRs, SIEMs, DOH providers, and more.
+            </p>
+            <a href="#" class="btn-pill"
+              >Explore Integrations<img
+                src="assets/svg/chevron-light.svg"
+                alt=""
+                class="chev"
+            /></a>
+          </div>
+          <div class="integrations__grid t-sm">
+            <ul>
+              <li>
+                <img src="assets/svg/int-crowdstrike.svg" alt="" />CrowdStrike
+                <small class="t-caption">Verify Devices</small>
+              </li>
+              <li>
+                <img src="assets/svg/int-intune.svg" alt="" />Intune
+                <small class="t-caption">Verify Devices</small>
+              </li>
+              <li>
+                <img src="assets/svg/int-kandji.svg" alt="" />Kandji
+                <small class="t-caption">Verify Devices</small>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="assets/svg/int-azure.svg" alt="" />Azure AD
+                <small class="t-caption">Sync Users &amp; Groups</small>
+              </li>
+              <li>
+                <img src="assets/svg/int-okta.svg" alt="" />Okta
+                <small class="t-caption">Sync Users &amp; Groups</small>
+              </li>
+              <li class="keep-br">
+                <img src="assets/svg/int-google.svg" alt="" />Google
+                <br />Workspace
+                <small class="t-caption">Sync Users &amp; Groups</small>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img src="assets/svg/int-pulumi.svg" alt="" />Pulumi
+                <small class="t-caption">Automate Deployment</small>
+              </li>
+              <li>
+                <img src="assets/svg/int-terraform.svg" alt="" />Terraform
+                <small class="t-caption">Automate Deployment</small>
+              </li>
+              <li>
+                <img src="assets/svg/int-nextdns.svg" alt="" />NextDNS
+                <small class="t-caption">Filter &amp; Encrypt DNS</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LEAST PRIVILEGE ACCESS ============ -->
+      <section class="access">
+        <div class="wrap intro">
+          <h3 class="t-base c-lime">Granular Access Controls</h3>
+          <h2 class="t-h2 heading">Implement least <br />privilege access</h2>
+          <p class="t-base c-soft nowrap-xl">
+            Protect corporate resources like SaaS applications, cloud
+            <br />environments, and on-prem services, with fine-grained access
+            <br />policies based on user, location, and device.
+          </p>
+        </div>
+
+        <div class="access__stage" aria-hidden="true">
+          <div class="access-card keep-br t-xs c-soft">
+            <h4>Everyone</h4>
+            <div>
+              <span><img src="assets/svg/acc-tableau.svg" alt="" /></span>
+              <p>Tableau<br />Accessed 2 hours ago</p>
+            </div>
+            <div>
+              <span><img src="assets/svg/acc-jira.svg" alt="" /></span>
+              <p>Jira<br />Accessed 7 days ago</p>
+            </div>
+            <h4>Engineers</h4>
+            <div>
+              <span><img src="assets/svg/acc-gitlab.svg" alt="" /></span>
+              <p>Gitlab<br />Accessed 3 months ago</p>
+            </div>
+            <h4>DevOps</h4>
+            <div>
+              <span><img src="assets/svg/acc-kube.svg" alt="" /></span>
+              <p>Prod Cluster<br />Accessed just now</p>
+            </div>
+            <div>
+              <span><img src="assets/svg/acc-kube.svg" alt="" /></span>
+              <p>Prod Cluster<br />Accessed 4 hours ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="wrap perks">
+          <div>
+            <img src="assets/svg/feat-device.svg" alt="" />
+            <h3 class="t-sm">Device Intelligence</h3>
+            <p class="t-sm c-muted nowrap-xl">
+              No more heavy maintenance and constant user <br />complaints.
+            </p>
+            <a href="#" class="link-chev"
+              >Learn More<img
+                src="assets/svg/chevron-light.svg"
+                alt=""
+                class="chev"
+            /></a>
+          </div>
+          <div>
+            <img src="assets/svg/feat-mfa.svg" alt="" />
+            <h3 class="t-sm">Universal MFA</h3>
+            <p class="t-sm c-muted nowrap-xl">
+              Apply TOTP, biometric, and security key-based <br />MFA to any
+              type of resource, even SSH.
+            </p>
+            <a href="#" class="link-chev"
+              >Learn More<img
+                src="assets/svg/chevron-light.svg"
+                alt=""
+                class="chev"
+            /></a>
+          </div>
+          <div>
+            <img src="assets/svg/feat-compliance.svg" alt="" />
+            <h3 class="t-sm">Seamless Compliance</h3>
+            <p class="t-sm c-soft nowrap-xl">
+              Meet the strictest requirements for SOC 2, <br />HIPAA, GDPR, and
+              more.
+            </p>
+            <a href="#" class="link-chev"
+              >Learn More<img
+                src="assets/svg/chevron-light.svg"
+                alt=""
+                class="chev"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ DEPLOY ============ -->
+      <section class="band">
+        <div class="wrap deploy">
+          <div class="deploy__copy">
+            <h3 class="t-lg">Deploy Twingate to your network</h3>
+            <p class="t-sm c-soft nowrap-xl">
+              Follow our guides to deploy Twingate to AWS, <br />GCP, Azure, or
+              a Linux server.
+            </p>
+            <div class="actions">
+              <a href="#" class="btn-pill"
+                >Sign Up<img
+                  src="assets/svg/chevron-light.svg"
+                  alt=""
+                  class="chev"
+              /></a>
+              <a href="#" class="link-chev"
+                >Request Demo<img
+                  src="assets/svg/chevron-light.svg"
+                  alt=""
+                  class="chev"
+              /></a>
+            </div>
+          </div>
+          <div class="tiles">
+            <a href="#" class="tile t-xl">
+              <img src="assets/svg/dep-aws.svg" alt="" />
+              <small class="t-sm">Deploy to</small><strong>AWS</strong>
+            </a>
+            <a href="#" class="tile t-xl">
+              <img src="assets/svg/dep-gcp.svg" alt="" />
+              <small class="t-sm">Deploy to</small><strong>GCP</strong>
+            </a>
+            <a href="#" class="tile t-xl">
+              <img src="assets/svg/dep-azure.svg" alt="" />
+              <small class="t-sm">Deploy to</small><strong>Azure</strong>
+            </a>
+            <a href="#" class="tile t-xl">
+              <img src="assets/svg/dep-linux.svg" alt="" />
+              <small class="t-sm">Deploy to</small><strong>Linux</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ZERO TRUST AS CODE ============ -->
+      <section class="wrap as-code">
+        <div class="as-code__copy">
+          <h3 class="t-base c-violet">Zero Trust as Code</h3>
+          <h2 class="t-h2 heading">
+            Automate your <br />journey to Zero Trust
+          </h2>
+          <p class="t-base c-soft nowrap-xl">
+            Bring security up to DevOps speed with an API-first design
+            <br />that easily integrates with your stack, no changes to
+            <br />infrastructure needed. Just choose your IaC, choose your
+            <br />VPC, and deploy.
+          </p>
+
+          <div class="tiles">
+            <a href="#" class="tile tile--outline t-xl">
+              <img src="assets/svg/dw-terraform.svg" alt="" />
+              <small class="t-sm">Deploy with</small><strong>Terraform</strong>
+            </a>
+            <a href="#" class="tile tile--outline t-xl">
+              <img src="assets/svg/dw-pulumi.svg" alt="" />
+              <small class="t-sm">Deploy with</small><strong>Pulumi</strong>
+            </a>
+            <a href="#" class="tile tile--outline t-xl">
+              <img src="assets/svg/dw-api.svg" alt="" />
+              <small class="t-sm">Deploy with</small><strong>Our API</strong>
+            </a>
+          </div>
+
+          <figure class="quote t-sm c-soft">
+            <blockquote class="nowrap-xl">
+              "Twingate is a powerful platform that allows us to
+              <br />programmatically deploy and maintain a zero trust approach
+              to our <br />infrastructure."
+            </blockquote>
+            <figcaption>
+              Paul Guthrie<span>—</span>Information Security Officer, Blend
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="code">
+          <div class="code__tabs t-sm">
+            <div class="code__tab is-active">
+              <span><img src="assets/svg/tab-terraform.svg" alt="" /></span
+              >Terraform
+            </div>
+            <div class="code__tab">
+              <span><img src="assets/svg/tab-pulumi.svg" alt="" /></span>Pulumi
+            </div>
+            <div class="code__tab">
+              <span><img src="assets/svg/tab-api.svg" alt="" /></span>API
+            </div>
+          </div>
+          <pre class="t-code">terraform {
+  required_providers {
+    aws = {
+      source  = <span>"hashicorp/aws"</span>
+      version = <span>"~&gt; 4.0"</span>
+    }
+    twingate = {
+      source = <span>"twingate/twingate"</span>
+    }
+  }
+}
+
+variable <span>"AWS_ACCESS_KEY_ID"</span> {}
+variable <span>"AWS_SECRET_ACCESS_KEY"</span> {}
+variable <span>"tg_api_key"</span> {}
+variable <span>"tg_network"</span> {}
+
+<span class="c"># Configure the AWS Provider</span>
+provider <span>"aws"</span> {
+  region     = <span>"eu-west-1"</span>
+  access_key = <span class="v">var</span>.AWS_ACCESS_KEY_ID
+  secret_key = <span class="v">var</span>.AWS_SECRET_ACCESS_KEY
+}
+
+<span class="c"># Configure Twingate Provider</span>
+provider <span>"twingate"</span> {
+  api_token = <span class="v">var</span>.tg_api_key
+  network   = <span class="v">var</span>.tg_network
+}</pre>
+        </div>
+      </section>
+
+      <!-- ============ SECURITY AT SCALE ============ -->
+      <section class="scale">
+        <div class="scale__card">
+          <div class="scale__copy">
+            <h3 class="t-base c-lime">Security at Scale</h3>
+            <h2 class="t-h2 heading">
+              Architected for speed <br />and reliability
+            </h2>
+
+            <dl class="stats t-base c-muted">
+              <div>
+                <dt class="t-stat c-lime">
+                  <span>+</span><span>1</span><span>9</span><span>6</span
+                  ><span>%</span>
+                </dt>
+                <dd>Increase in bandwidth</dd>
+              </div>
+              <div>
+                <dt class="t-stat c-lime">
+                  <span>-</span><span>8</span><span>7</span><span>%</span>
+                </dt>
+                <dd>Decrease in support tickets</dd>
+              </div>
+            </dl>
+
+            <p class="t-base c-muted nowrap-xl">
+              Twingate’s unique network architecture eliminates the central
+              <br />chokepoints of legacy solutions that slow teams down and put
+              <br />your security stack at risk of outages and service
+              disruptions.
+            </p>
+            <a href="#" class="btn-pill"
+              >Explore Architecture<img
+                src="assets/svg/chevron-light.svg"
+                alt=""
+                class="chev"
+            /></a>
+          </div>
+
+          <div class="scale__globe" aria-hidden="true">
+            <img src="assets/img/globe.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CUSTOMERS ============ -->
+      <section class="wrap customers">
+        <div class="customers__head">
+          <h2 class="t-h2 heading">
+            Securing the fastest growing <br />companies in the world
+          </h2>
+          <a href="#" class="btn-pill"
+            >Explore Customer Stories<img
+              src="assets/svg/chevron-light.svg"
+              alt=""
+              class="chev"
+          /></a>
+        </div>
+
+        <div class="stories">
+          <a href="#" class="story">
+            <figure>
+              <img
+                src="assets/img/photo-blend.png"
+                alt=""
+                class="story__photo"
+              />
+              <img
+                src="assets/svg/story-blend.svg"
+                alt="Blend"
+                class="story__logo story__logo--blend"
+              />
+            </figure>
+            <blockquote class="t-base c-muted nowrap-xl">
+              “We've invested heavily in automation at Blend and
+              <br />Twingate is a powerful platform that allows us to
+              <br />programmatically deploy and maintain a zero trust approach
+              <br />to our infrastructure.”
+            </blockquote>
+            <p class="story__meta t-sm c-muted">
+              <span>Blend</span> • Fin-tech
+            </p>
+          </a>
+
+          <a href="#" class="story">
+            <figure>
+              <img
+                src="assets/img/photo-kooapps.png"
+                alt=""
+                class="story__photo"
+              />
+              <img
+                src="assets/svg/story-kooapps.svg"
+                alt="Kooapps"
+                class="story__logo"
+              />
+            </figure>
+            <blockquote class="t-base c-muted nowrap-xl">
+              “Using Twingate is definitely much, much easier compared
+              <br />to how we used to do things with our VPN. Twingate is
+              <br />easier to deploy, setup, and maintain, it’s easier for our
+              users, <br />and we get all the security benefits that Zero Trust
+              offers.”
+            </blockquote>
+            <p class="story__meta t-sm c-muted">
+              <span>Kooapps</span> • Gaming
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ CTA + FOOTER ============ -->
+    <footer class="wrap footer">
+      <h2 class="t-h2 heading">
+        The VPN replacement your <br />workforce will love.
+      </h2>
+      <div class="actions">
+        <a href="#" class="btn-lime"
+          >Try Twingate for Free<img
+            src="assets/svg/chevron-dark.svg"
+            alt=""
+            class="chev"
+        /></a>
+        <a href="#" class="link-chev"
+          >Request a Demo<img
+            src="assets/svg/chevron-light.svg"
+            alt=""
+            class="chev"
+        /></a>
+      </div>
+
+      <div class="footer__main">
+        <div class="footer__brand">
+          <img src="assets/svg/aicpa.svg" alt="AICPA SOC" class="footer__soc" />
+          <img
+            src="assets/svg/logo-footer.svg"
+            alt="Twingate"
+            class="footer__logo"
+          />
+          <p class="footer__copy t-caption c-muted">
+            Copyright © 2023 Twingate.
+          </p>
+          <div class="socials">
+            <a href="#"
+              ><img src="assets/svg/soc-twitter.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="assets/svg/soc-facebook.svg" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/svg/soc-linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="#"
+              ><img src="assets/svg/soc-youtube.svg" alt="YouTube"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer__links t-sm">
+          <ul>
+            <li>Solutions</li>
+            <li><a href="#">Zero Trust Access</a></li>
+            <li class="footer__group">Documentation</li>
+            <li><a href="#">Quick Start</a></li>
+            <li><a href="#">Use Cases</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Twingate Labs</a></li>
+          </ul>
+          <ul>
+            <li>Resources</li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Whitepaper</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+          <ul>
+            <li>Company</li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Your Privacy Choices</a></li>
+            <li>
+              <a href="#" class="footer__privacy"
+                ><img src="assets/svg/privacy-toggle.svg" alt="Privacy choices"
+              /></a>
+            </li>
+          </ul>
+          <ul>
+            <li>Support</li>
+            <li><a href="#">Contact Sales</a></li>
+            <li><a href="#">Get Help</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Try for Free</a></li>
+            <li><a href="#">Request Demo</a></li>
+            <li><a href="#">Download</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <a href="#" class="status"
+          ><span class="status__dot"></span
+          ><span class="t-xs c-muted">All Systems Operational↗</span></a
+        >
+        <div class="platforms t-sm">
+          <a href="#"
+            ><img src="assets/svg/os-apple.svg" alt="" /><span>macOS</span></a
+          >
+          <a href="#"
+            ><img src="assets/svg/os-windows.svg" alt="" /><span
+              >Windows</span
+            ></a
+          >
+          <a href="#"
+            ><img src="assets/svg/os-linux.svg" alt="" /><span>Linux</span></a
+          >
+          <a href="#"
+            ><img src="assets/svg/os-chrome.svg" alt="" /><span>Chrome</span></a
+          >
+          <a href="#"
+            ><img src="assets/svg/os-apple.svg" alt="" /><span>iOS</span></a
+          >
+          <a href="#"
+            ><img src="assets/svg/os-android.svg" alt="" /><span
+              >Android</span
+            ></a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- server rack vents, reused by the ZTNA diagram -->
+    <svg class="sprite" aria-hidden="true">
+      <symbol id="rack-vents" viewBox="0 0 44 10">
+        <path
+          fill="currentColor"
+          d="M0 0h12v2H0zm0 4h12v2H0zm0 4h12v2H0zM16 0h12v2H16zm0 4h12v2H16zm0 4h12v2H16zM32 0h12v2H32zm0 4h12v2H32zm0 4h12v2H32z"
+        />
+      </symbol>
+    </svg>
+  </body>
+</html>

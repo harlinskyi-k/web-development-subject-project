@@ -1,0 +1,91 @@
+/* ---------- Deploy ---------- */
+.deploy {
+  display: grid;
+  gap: 32px;
+  padding-block: 40px;
+}
+
+.deploy__copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.deploy__copy p {
+  margin-top: 12px;
+}
+
+.deploy__copy .actions {
+  margin-top: 24px;
+}
+
+/* clickable "Deploy to / Deploy with" tiles */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  height: 180px;
+  flex-direction: column;
+  border-radius: 12px;
+  background: rgba(29, 32, 35, 0.6);
+  padding: 18px 0 19px 18px;
+  box-shadow: var(--sh-hairline);
+}
+
+.tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0;
+  border-radius: 12px;
+}
+
+.tile img {
+  width: 40px;
+  margin-bottom: auto;
+}
+
+.tile small {
+  margin-left: 2px;
+  color: #8d8d96;
+}
+
+.tile strong {
+  margin-left: 2px;
+  font-weight: 400;
+}
+
+.tile--outline {
+  height: 181px;
+  border: 1px solid var(--line);
+  background: none;
+  padding: 17px 0 18px 17px;
+  box-shadow: none;
+}
+
+.tile--outline::after {
+  content: none;
+}
+
+@media (min-width: 640px) {
+  .deploy .tiles {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .deploy {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 661px);
+    gap: 0;
+  }
+  .deploy__copy {
+    margin-top: 17px;
+  }
+}

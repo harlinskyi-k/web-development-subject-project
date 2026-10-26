@@ -1,0 +1,130 @@
+/* ---------- Header ---------- */
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 50;
+  height: 64px;
+  min-width: 320px;
+  background: rgba(14, 15, 17, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.header > .wrap {
+  height: 100%;
+}
+
+.header__bar {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__bar::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 1px;
+  height: 1px;
+  pointer-events: none;
+  box-shadow: 0 0.5px 0 rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+  position: absolute;
+  inset: 100% 0 auto;
+  display: none;
+  flex-direction: column;
+  border-radius: 0 0 12px 12px;
+  background: rgba(14, 15, 17, 0.95);
+  padding: 8px 14px;
+}
+
+.nav a {
+  padding-block: 6px;
+}
+
+/* The checkbox opens the menu on small screens — no script needed */
+.nav-toggle:checked ~ .nav {
+  display: flex;
+}
+
+.header__actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__demo {
+  display: none;
+  margin-right: 8px;
+  line-height: 18px;
+}
+
+.header__try {
+  display: flex;
+  height: 34px;
+  align-items: center;
+  border-radius: 9999px;
+  background: #fff;
+  padding-inline: 14px;
+  line-height: 18px;
+  color: #000;
+}
+
+.header__signin {
+  display: none;
+  padding-right: 14px;
+}
+
+.header__burger {
+  display: flex;
+  width: 34px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgba(245, 245, 255, 0.1);
+  cursor: pointer;
+}
+
+.nav-toggle:focus-visible ~ .header__actions .header__burger {
+  outline: 2px solid var(--lime);
+  outline-offset: 2px;
+}
+
+@media (min-width: 640px) {
+  .header__signin {
+    display: inline-flex;
+  }
+  .nav__signin {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav,
+  .nav-toggle:checked ~ .nav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+  }
+  .nav a {
+    padding-inline: 10px;
+  }
+  .nav__demo,
+  .header__burger {
+    display: none;
+  }
+  .header__demo {
+    display: block;
+  }
+}

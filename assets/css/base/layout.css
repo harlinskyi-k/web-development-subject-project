@@ -1,0 +1,24 @@
+/* ---------- Layout ---------- */
+.wrap {
+  width: 100%;
+  max-width: 1104px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding-inline: 24px;
+  }
+}
+
+.heading {
+  color: #fff;
+}
+
+@media (min-width: 1104px) {
+  .heading,
+  .nowrap-xl {
+    white-space: nowrap;
+  }
+}

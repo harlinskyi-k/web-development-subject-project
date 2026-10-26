@@ -1,0 +1,281 @@
+/* ---------- Zero Trust Network Access ---------- */
+.ztna {
+  padding-block: 120px 96px;
+}
+
+.diagram {
+  position: relative;
+  display: grid;
+  height: 176px;
+  grid-template-columns: 178px minmax(120px, 1fr) 178px;
+}
+
+/* glows + connection lines behind the devices */
+.diagram__glow {
+  position: absolute;
+  inset: -137px calc(100% * 170 / 1056) -93px;
+  border-radius: 9999px;
+  background: var(--lime);
+  opacity: 0.08;
+  filter: blur(50px);
+}
+
+.diagram__haze {
+  position: absolute;
+  inset: auto calc(100% * 140 / 1056) 105px;
+  height: 10px;
+  background: var(--lime);
+  opacity: 0.1;
+  filter: blur(12px);
+}
+
+.diagram__link {
+  position: absolute;
+  top: 63px;
+  height: 6px;
+  background: var(--lime);
+}
+
+.diagram__link--in {
+  left: 170px;
+  right: calc(50% + 60px);
+}
+
+.diagram__link--out {
+  left: calc(50% + 60px);
+  right: 178px;
+}
+
+.diagram__rail {
+  position: absolute;
+  top: 62px;
+  left: 178px;
+  right: calc(50% + 60px);
+  height: 8px;
+  border-block: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.diagram__device {
+  position: relative;
+}
+
+.diagram__device--laptop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.laptop {
+  position: relative;
+  width: 170px;
+  height: 118px;
+  margin-top: 4px;
+  overflow: hidden;
+  border-radius: 6px 6px 0 0;
+  background: #000;
+  padding: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.laptop::before {
+  content: "";
+  display: block;
+  height: 100%;
+  border-radius: 3px 3px 0 0;
+  background: rgba(189, 189, 189, 0.2);
+}
+
+.laptop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #3a3d40;
+  border-bottom: 0;
+  border-radius: 6px 6px 0 0;
+}
+
+.laptop__base {
+  position: relative;
+  display: flex;
+  width: 190px;
+  height: 6px;
+  flex-shrink: 0;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0 0 4px 4px;
+  background: #3a3d40;
+}
+
+.laptop__base::before,
+.laptop__base::after {
+  content: "";
+  height: 2px;
+  background: rgba(18, 19, 21, 0.43);
+}
+
+.laptop__base::before {
+  position: absolute;
+  inset: auto 0 0;
+}
+
+.laptop__base::after {
+  position: relative;
+  width: 32px;
+  border-radius: 0 0 10px 10px;
+}
+
+.diagram__check {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.check {
+  position: relative;
+  display: grid;
+  width: 120px;
+  height: 120px;
+  margin-top: 6px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 9999px;
+  backdrop-filter: blur(27px);
+}
+
+.check > img:first-child {
+  width: 64px;
+}
+
+.check__ring {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+
+.check::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 9999px;
+  box-shadow:
+    var(--sh-outline),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.25),
+    inset 4.5px 0 0 -4px rgba(238, 243, 95, 0.8),
+    inset -4.5px 0 0 -4px rgba(238, 243, 95, 0.8);
+}
+
+.server {
+  height: 132px;
+  border-radius: 4px;
+  background: #0f1115;
+  padding: 3px;
+  box-shadow: inset 0 0.5px 0 rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.2));
+}
+
+.server__rack {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 4px;
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 4px;
+  box-shadow: 0 0 0 3px #3a3d40;
+}
+
+.server__unit {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1px;
+  background: #3a3d40;
+  padding-inline: 8px;
+  box-shadow: var(--sh-hairline);
+}
+
+.server__leds {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.server__leds i {
+  display: block;
+  width: 2px;
+  height: 2px;
+}
+
+.led {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.led--off {
+  background: #0f0f12;
+}
+
+.server__unit svg {
+  color: var(--page);
+}
+
+.specs {
+  display: none;
+  width: 100%;
+  margin-top: 24px;
+  line-height: 13px;
+  letter-spacing: 0.02em;
+  opacity: 0.4;
+}
+
+.specs--resource {
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+.specs > div {
+  display: flex;
+  height: 21px;
+  justify-content: space-between;
+}
+
+.specs dt {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ztna__copy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ztna__copy h2 {
+  margin-top: 12px;
+}
+
+.ztna__copy p {
+  margin-top: 23px;
+  max-width: 420px;
+}
+
+.ztna__copy .btn-pill {
+  margin-top: 25px;
+}
+
+@media (max-width: 639px) {
+  .diagram {
+    zoom: 0.68;
+  }
+}
+
+@media (min-width: 1104px) {
+  .ztna {
+    padding-block: 150px;
+  }
+  .specs {
+    display: block;
+  }
+}

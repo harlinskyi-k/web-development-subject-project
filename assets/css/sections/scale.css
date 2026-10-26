@@ -1,0 +1,154 @@
+/* ---------- Security at scale ---------- */
+.scale {
+  padding-inline: 16px;
+}
+
+.scale__card {
+  position: relative;
+  max-width: 1136px;
+  margin-inline: auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background: radial-gradient(
+    ellipse 568px 586px at center,
+    #1d2023,
+    rgba(29, 32, 35, 0.15)
+  );
+  padding: 40px 24px;
+  box-shadow: var(--sh-card-flat);
+}
+
+.scale__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0;
+  border-radius: 20px;
+}
+
+.scale__card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 20px;
+  box-shadow: var(--sh-hairline);
+}
+
+.scale__copy {
+  position: relative;
+  display: flex;
+  max-width: 496px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.scale__copy h2 {
+  margin-top: 16px;
+}
+
+.scale__copy > p {
+  margin-top: 23px;
+}
+
+.scale__copy .btn-pill {
+  margin-top: 25px;
+}
+
+.stats {
+  display: grid;
+  width: 100%;
+  min-height: 111px;
+  margin-top: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-block: 1px solid var(--line);
+}
+
+.stats > div {
+  padding-block: 19px 12px;
+}
+
+.stats > div:first-child {
+  padding-right: 12px;
+}
+
+.stats > div + div {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 19px;
+}
+
+.stats dt {
+  display: flex;
+  text-align: center;
+}
+
+.stats dt span {
+  width: 20px;
+}
+
+.stats dt span:not(:first-child, :last-child) {
+  margin-top: -1px;
+}
+
+.stats dt span:last-child {
+  font-size: 0.92em;
+}
+
+.stats dd {
+  margin-top: 4px;
+}
+
+.scale__globe {
+  position: absolute;
+  left: 600px;
+  top: 33px;
+  display: none;
+  width: 744px;
+  height: 744px;
+  overflow: hidden;
+  border-radius: 330px;
+  -webkit-mask-image: radial-gradient(
+    circle 527px at 50% 50%,
+    #000 60%,
+    transparent 70%
+  );
+  mask-image: radial-gradient(
+    circle 527px at 50% 50%,
+    #000 60%,
+    transparent 70%
+  );
+}
+
+.scale__globe img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 640px) {
+  .scale {
+    padding-inline: 24px;
+  }
+  .scale__card {
+    padding-inline: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .scale__globe {
+    display: block;
+  }
+}
+
+@media (min-width: 1104px) {
+  .scale {
+    padding-inline: 0;
+  }
+  .scale__card {
+    padding-block: 48px;
+  }
+  .stats {
+    grid-template-columns: 238px 258px;
+  }
+}

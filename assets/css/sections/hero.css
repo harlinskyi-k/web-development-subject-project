@@ -1,0 +1,123 @@
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* fade the mockup into the page */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 186px;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, var(--page));
+}
+
+.hero__top {
+  position: relative;
+}
+
+/* decorative glow + beam; offsets are template px over the 1104px box */
+.hero__glow {
+  position: absolute;
+  inset: -100px calc(100% * 58 / 1104) -100px calc(100% * 361 / 1104);
+  border-radius: 9999px;
+  background: var(--lime);
+  opacity: 0.08;
+  filter: blur(50px);
+}
+
+.hero__vignette {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: calc(100% * 308 / 1104);
+  width: calc(100% * 600 / 1104);
+  border-radius: 9999px;
+  background: radial-gradient(
+    ellipse 300px 319px at center,
+    #0e0f11,
+    rgba(14, 15, 17, 0)
+  );
+}
+
+.hero__beam,
+.hero__beam-glow,
+.hero__beam-line {
+  position: absolute;
+  display: none;
+}
+
+.hero__beam {
+  top: 0;
+  left: calc(100% * 821 / 1104);
+  width: calc(100% * 45 / 1104);
+  height: 100%;
+}
+
+.hero__beam-glow {
+  top: -20px;
+  bottom: -20px;
+  left: calc(100% * 840 / 1104);
+  width: 7px;
+  background: var(--lime);
+  opacity: 0.5;
+  filter: blur(15px);
+}
+
+.hero__beam-line {
+  top: 0;
+  bottom: 0;
+  left: calc(100% * 841 / 1104);
+  width: 5px;
+  background: var(--lime);
+}
+
+.hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-block: 104px 64px;
+}
+
+.hero__eyebrow {
+  white-space: nowrap;
+}
+
+.hero__title {
+  margin-top: 20px;
+  max-width: 7.5em;
+}
+
+.hero__lead {
+  margin-top: 23px;
+  max-width: 480px;
+}
+
+.hero__content .actions {
+  margin-top: 41px;
+}
+
+@media (min-width: 1024px) {
+  .hero__beam,
+  .hero__beam-glow,
+  .hero__beam-line {
+    display: block;
+  }
+}
+
+@media (min-width: 1104px) {
+  .hero__content {
+    padding-block: 127px 96px;
+  }
+  .hero__title {
+    margin-top: 25px;
+    max-width: none;
+  }
+  .hero__lead {
+    max-width: none;
+    white-space: nowrap;
+  }
+}

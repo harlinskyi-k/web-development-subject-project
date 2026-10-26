@@ -1,0 +1,61 @@
+/* ---------- Type scale (size / line-height in template px, written in rem) ---------- */
+.t-micro {
+  font-size: 0.59375rem; /* 9.5 / 10 */
+  line-height: 0.625rem;
+}
+.t-caption {
+  font-size: 0.65625rem; /* 10.5 / 16.5 */
+  line-height: 1.03125rem;
+}
+.t-xs {
+  font-size: 0.78125rem; /* 12.5 / 19.5 */
+  line-height: 1.21875rem;
+}
+.t-code {
+  font-size: 0.8125rem; /* 13 / 19.5 */
+  line-height: 1.21875rem;
+}
+.t-sm {
+  font-size: 0.9rem; /* 14.4 / 22.5 */
+  line-height: 1.40625rem;
+}
+.t-base {
+  font-size: 0.984375rem; /* 15.75 / 25.5 */
+  line-height: 1.59375rem;
+}
+.t-lg {
+  font-size: 1.15rem; /* 18.4 / 30 */
+  line-height: 1.875rem;
+}
+.t-xl {
+  font-size: 1.21875rem; /* 19.5 / 30 */
+  line-height: 1.875rem;
+}
+.t-stat {
+  font-size: 2.125rem; /* 34 / 41 */
+  line-height: 2.5625rem;
+}
+/* Headings scale fluidly from a 375px viewport up to the 1104px template width */
+.t-h2 {
+  font-size: clamp(2rem, 1.56625rem + 1.852vw, 2.84375rem); /* 32 → 45.5 */
+  line-height: calc(1em + 0.75rem);
+  letter-spacing: -0.01em;
+}
+.t-h1 {
+  font-size: clamp(3rem, 1.585625rem + 6.036vw, 5.75rem); /* 48 → 92 */
+  line-height: calc(1em + 0.8125rem);
+  letter-spacing: -0.04em;
+}
+
+.c-lime {
+  color: var(--lime);
+}
+.c-violet {
+  color: var(--violet);
+}
+.c-muted {
+  color: var(--muted);
+}
+.c-soft {
+  color: var(--soft);
+}

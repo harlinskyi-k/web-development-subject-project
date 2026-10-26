@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Breakpoints: 640 (sm) · 768 (md) · 1024 (lg) · 1104 (xl)
+   ========================================================================== */
+
+/* ---------- Tokens ---------- */
+:root {
+  --page: #0e0f11;
+  --lime: #eef35f;
+  --muted: #a1a1aa;
+  --soft: rgba(240, 240, 255, 0.6);
+  --panel: #1d2023;
+  --violet: #9a8aff;
+  --line: rgba(245, 245, 255, 0.1);
+
+  --sh-hairline: inset 0 0.5px 0 rgba(255, 255, 255, 0.1);
+  --sh-outline: inset 0 0 0 0.5px rgba(255, 255, 255, 0.1);
+  --sh-band:
+    0 -0.5px 0 rgba(255, 255, 255, 0.03),
+    0 0.5px 0.5px rgba(255, 255, 255, 0.08);
+  --sh-inner-edge: inset 0 1px 1px rgba(0, 0, 0, 0.3);
+  --sh-bead:
+    inset 0 1.5px 0.5px -1px rgba(255, 255, 255, 0.25),
+    inset 0 -1.5px 0.5px -1px rgba(255, 255, 255, 0.25);
+  --sh-card-flat:
+    0 0.602px 1.566px -0.833px rgba(0, 0, 0, 0.13),
+    0 2.289px 5.95px -1.667px rgba(0, 0, 0, 0.13),
+    0 10px 26px -2.5px rgba(0, 0, 0, 0.13);
+  --sh-card: var(--sh-card-flat), var(--sh-hairline);
+  --sh-window:
+    0 0.602px 2.047px -1.333px rgba(0, 0, 0, 0.23),
+    0 2.289px 7.781px -2.667px rgba(0, 0, 0, 0.2),
+    0 10px 34px -4px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 0.5px rgba(255, 255, 255, 0.05);
+  --sh-story:
+    0.199px 0.796px 0.821px -0.938px rgba(0, 0, 0, 0.18),
+    0.604px 2.415px 2.489px -1.875px rgba(0, 0, 0, 0.17),
+    1.596px 6.383px 6.579px -2.813px rgba(0, 0, 0, 0.15),
+    5px 20px 20.615px -3.75px rgba(0, 0, 0, 0.06), var(--sh-hairline);
+  --sh-frame:
+    0.236px 0.707px 3.724px rgba(0, 0, 0, 0.01),
+    0.602px 1.807px 9.521px rgba(0, 0, 0, 0.03),
+    1.207px 3.622px 19.088px rgba(0, 0, 0, 0.05),
+    2.289px 6.866px 36.185px rgba(0, 0, 0, 0.1),
+    4.549px 13.647px 71.925px rgba(0, 0, 0, 0.2),
+    10px 30px 158.114px rgba(0, 0, 0, 0.45);
+}

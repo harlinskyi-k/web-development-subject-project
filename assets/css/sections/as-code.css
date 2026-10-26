@@ -1,0 +1,155 @@
+/* ---------- Zero Trust as Code ---------- */
+.as-code {
+  display: grid;
+  align-items: start;
+  gap: 48px;
+  padding-block: 96px;
+}
+
+.as-code__copy {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.as-code__copy h2 {
+  margin-top: 16px;
+}
+
+.as-code__copy p {
+  margin-top: 23px;
+}
+
+.as-code .tiles {
+  width: 100%;
+  margin-top: 33px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.quote {
+  margin-top: 32px;
+}
+
+.quote blockquote {
+  position: relative;
+  padding-left: 12px;
+}
+
+.quote blockquote::before {
+  content: "";
+  position: absolute;
+  inset: 3px auto 3px 0;
+  width: 2px;
+  background: var(--soft);
+}
+
+.quote figcaption {
+  margin-top: 20px;
+}
+
+.quote figcaption span {
+  margin-inline: 4px;
+}
+
+.code {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+  background: var(--page);
+  box-shadow: 0 0 100px 75px rgba(177, 153, 255, 0.04);
+}
+
+.code::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code__tabs {
+  display: flex;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.code__tab {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  gap: 10px;
+  border-color: var(--line);
+  padding-inline: 16px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.code__tab span {
+  display: grid;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.code__tab img {
+  width: 18px;
+}
+
+.code__tab:not(:last-child) {
+  border-right-width: 1px;
+}
+
+.code__tab:not(.is-active) {
+  border-bottom-width: 1px;
+}
+
+.code__tab.is-active {
+  background: var(--page);
+  color: #fff;
+}
+
+.code__tab.is-active span {
+  background: #7b66ff;
+}
+
+.code pre {
+  margin: 24px 0 0 24px;
+  font-family: inherit;
+  color: #999;
+}
+
+.code pre span {
+  color: #666;
+}
+
+.code pre .c {
+  color: #444;
+}
+
+.code pre .v {
+  color: #ccc;
+}
+
+@media (min-width: 640px) {
+  .as-code .tiles {
+    grid-template-columns: repeat(3, minmax(0, 143px));
+  }
+}
+
+@media (min-width: 1024px) {
+  .as-code {
+    grid-template-columns: minmax(0, 492px) minmax(0, 500px);
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+@media (min-width: 1104px) {
+  .as-code {
+    padding-block: 250px;
+  }
+}

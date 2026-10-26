@@ -1,0 +1,222 @@
+/* ---------- Feature cards ---------- */
+.features {
+  display: grid;
+  gap: 24px;
+  padding-bottom: 96px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.card__visual {
+  height: 316px;
+  flex-shrink: 0;
+  overflow: hidden;
+  padding-top: 33px;
+}
+
+.card__visual--list {
+  padding: 16px 20px 0;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 23px 24px 24px;
+}
+
+.card__body p {
+  margin-top: 4px;
+}
+
+.card__body .btn-pill {
+  margin-top: 25px;
+}
+
+/* "device not authorized" panel */
+.alert {
+  position: relative;
+  display: flex;
+  width: 233px;
+  height: 268px;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background: var(--panel);
+  padding: 24px 16px 0;
+  text-align: center;
+  letter-spacing: 0.01em;
+  box-shadow: var(--sh-card);
+}
+
+.alert::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.alert__icon {
+  position: relative;
+  display: grid;
+  width: 72px;
+  height: 72px;
+  place-items: center;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.alert__icon > img {
+  width: 48px;
+}
+
+.lock {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 9999px;
+  background: var(--lime);
+}
+
+.lock img {
+  width: 11px;
+}
+
+.alert__icon .lock {
+  position: absolute;
+  right: -8px;
+  bottom: 0;
+}
+
+.alert__name {
+  margin-top: 16px;
+  color: #fff;
+}
+
+.alert__text {
+  margin-top: 12px;
+  white-space: nowrap;
+}
+
+.alert__more {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding-top: 4px;
+}
+
+/* access log list */
+.activity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  white-space: nowrap;
+  padding-top: 12px;
+  letter-spacing: 0.01em;
+}
+
+.activity li {
+  display: flex;
+  height: 52px;
+  flex-shrink: 0;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0 0 12px;
+}
+
+.activity__bead {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 9999px;
+  background: var(--panel);
+  box-shadow: var(--sh-bead);
+}
+
+.activity__bead img {
+  width: 15px;
+}
+
+.activity__line {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  padding-top: 1px;
+}
+
+.activity__verb {
+  margin-right: 3px;
+  letter-spacing: normal;
+  color: var(--muted);
+}
+
+.activity__line img {
+  position: relative;
+  top: 4px;
+  width: 16px;
+}
+
+.activity__blocked {
+  position: relative;
+  border-radius: 10px;
+  background: var(--panel);
+  color: #fff;
+  box-shadow: var(--sh-card);
+}
+
+.activity__blocked .activity__verb {
+  letter-spacing: inherit;
+}
+
+.activity__blocked::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+@media (max-width: 639px) {
+  .activity {
+    zoom: 0.8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1104px) {
+  .features {
+    gap: 56px;
+    padding-bottom: 200px;
+  }
+}
