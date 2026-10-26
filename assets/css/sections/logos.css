@@ -23,6 +23,7 @@
 
 .logos__grid img {
   max-width: 85%;
+  user-select: none;
 }
 
 @media (min-width: 640px) {

@@ -58,6 +58,7 @@ img,
 svg {
   display: block;
   vertical-align: middle;
+  -webkit-user-drag: none;
 }
 
 img {
